@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    min-height: 100vh;
+}
+.product-right, .product-left{
+    width: 50%;
+    padding: 3rem 2rem;
+}
+.product-left img{
+    width: 100%;
+    display: block;
+}
+.product-right{
+    text-align: center;
+    color: #fff;
+}
+.product-right h2{
+    font-weight: 500;
+    font-size: 2.8rem;
+    line-height: 1.2;
+    max-width: 500px;
+    margin: 2rem auto 1rem auto;
+}
+.text{
+    font-weight: 500;
+    font-size: 1.2rem;
+    display: block;
+}
+.btns-group{
+    margin-top: 3rem;
+}
+.btn-solid{
+    background-color: #0071e3;
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1.2rem;
+    border-radius: 1.4rem;
+    margin-right: 1.6rem;
+    font-size: 1.1rem;
+}
+.btn-link{
+    color: #0071e3;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 1.1rem;
+}
+.btn-link:hover{
+    text-decoration: underline;
+}
+.btn-link .fa{
+    font-size: 0.7rem;
+}
+#product-sec-1{
+    background-color: #000;
+}
+#product-sec-1 .product-left img{
+    width: 70%;
+}
+#product-sec-2{
+    background-color: #fafafa;
+}
+#product-sec-2 .product-right{
+    color: #000;
+    order: 1;
+}
+#product-sec-2 .product-left{
+    order: 2;
+}
+#product-sec-3{
+    background: url(images/watch-img-3.jpg) center/cover no-repeat;
+}
+#product-sec-3 .container, #product-sec-4 .container{
+    align-items: flex-end;
+}
+#product-sec-3 .product-right, #product-sec-4 .product-right{
+    width: 100%;
+    color: #000;
+    padding-bottom: 6rem;
+}
+
+#product-sec-4{
+    background: url(images/watch-img-4.jpg) center/cover no-repeat;
+}
+#product-sec-4 .product-right{
+    color: #fff;
+}
+.dotted-btns{
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 2rem;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+}
+.dot{
+    color: rgb(221, 221, 221);
+}
+
+@media screen and (max-width: 992px){
+    .product-left img{
+        margin: 0 auto;
+    }
+    #product-sec-1 .container, #product-sec-2 .container{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .product-right h2{
+        font-size: 1.6rem;
+    }
+    .text{
+        font-size: 1rem;
+    }
+    .product-right, .product-left{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .btn-solid{
+        margin-right: 0;
+        margin-bottom: 1rem;
+        display: block;
+    }
+    .dotted-btns{
+        right: 1rem;
+    }
+    .dot{
+        font-size: 0.7rem;
+    }
+}
